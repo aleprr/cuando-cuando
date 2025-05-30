@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cuando</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-family: Georgia, serif;
+      overflow: hidden;
+    }
+    video#bgVideo {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      background: black;
+      pointer-events: none;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(3px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      z-index: 1;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 800px;
+      max-height: 75vh;
+      overflow-y: auto;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    p {
+      white-space: pre-wrap;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    .button {
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255,126,95,0.6);
+      user-select: none;
+      transition: transform 0.2s ease;
+      margin: 0.5rem 0;
+      width: 260px;
+    }
+    .button:hover:not(:disabled) {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,126,95,0.9);
+    }
+    .button:disabled {
+      background: #ccc;
+      cursor: default;
+      box-shadow: none;
+      color: #666;
+      transform: none;
+    }
+    .error-msg {
+      color: #ffb3b3;
+      background: #330000cc;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<video id="bgVideo" preload="auto" playsinline muted autoplay loop>
+  <source src="cuando cuando.mp4" type="video/mp4" />
+  Tu navegador no soporta videos HTML5.
+</video>
+
+<audio id="audioTrack" preload="auto" loop>
+  <source src="CUANDO CUANDO.webm" type="audio/mpeg" />
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<div class="overlay">
+  <div class="error-msg" id="errorMsg"></div>
+  <div class="card">
+    <h1>Mi Cachetona</h1>
+    <p>
+Hay palabras que se dicen con la boca, y hay otras que solo pueden salir del corazón. Hoy quiero escribirte con el alma abierta, sin filtros, como cuando uno le habla al amor de su vida sin miedo. Y si te escribo ahora, es porque cada vez que escucho “Cuando” de José y Toro, es como si alguien hubiera tomado todo lo que siento por ti y lo hubiera convertido en canción.
+
+Esa canción no es solo música. Es un recordatorio de lo que significas en mi vida. Me hace pensar en todos los momentos en los que no estás cerca, y cómo, incluso en esa distancia, tu presencia sigue abrazándome. Porque cuando tú no estás, el mundo no gira igual. Todo sigue, sí, pero nada se siente tan vivo como cuando tú estás conmigo.
+
+Tu sonrisa, Angie… tu sonrisa tiene el poder de desarmarme. De calmar cualquier tormenta. Cuando te veo, siento que todo lo que estuvo mal en el día desaparece. Que todo lo que no tenía sentido, de pronto se ordena, solo porque tú estás ahí. A tu lado, me siento más yo. Me siento valiente, me siento en casa.
+
+Y es que tú no eres una persona cualquiera. Tú eres esa canción que uno quiere escuchar en todos los amaneceres de su vida. Eres la risa que suena más fuerte que cualquier problema. Eres la calma que llega después de la ansiedad. Eres la razón por la que creo que todo lo bueno es posible.
+
+La canción dice “cuando no estás, la vida se me va”, y yo lo siento así. Porque no se trata solo de estar o no físicamente. Se trata de lo que despiertas en mí. Tu ausencia no es solo física, se siente en el alma. Y tu presencia… tu presencia es luz. Eres sol en días nublados. Eres abrigo cuando la vida enfría.
+
+A veces me pregunto si tú sabes todo lo que provocas en mí. Si sabes cómo tu forma de mirar me derrite. Si sabes que tu voz es mi lugar seguro. Que hay días en que basta con leerte o escucharte para que todo esté bien. No hay dolor que no se calme cuando pienso en ti.
+
+Y si alguna vez dudo, si alguna vez la vida se pone difícil, vuelvo a ti. Porque tú eres mi “volver”, mi “refugio”, mi “yo puedo”. No quiero pensar en un futuro sin ti, porque simplemente no lo imagino. Tú eres esa parte de mi historia que se convirtió en destino.
+
+Te amo, Angie. Te amo como se ama lo que no se quiere perder nunca. Te amo con la certeza de que la vida me hizo el mayor regalo al cruzarte en mi camino. Y aunque a veces no sepa cómo decírtelo, quiero que sepas que todo lo que hago, todo lo que sueño, de alguna forma te incluye a ti.
+
+Hoy no te escribo solo para recordarte lo que siento, sino para agradecerte. Gracias por existir. Gracias por ser tú. Gracias por enseñarme que el amor verdadero no duele, sino que cuida, abraza, espera y se entrega sin condiciones.
+
+Si alguna vez sientes duda, si alguna vez sientes frío, si alguna vez la vida te sacude, solo recuerda esto: mi amor por ti está aquí, firme, fuerte, eterno. Y cada vez que escuches esa canción, recuerda que “cuando tú estás”, mi corazón late más feliz, más fuerte, más completo.
+
+menos mal que soy paciente mira que tienes suerte angie lo mucho que te amo tanto que solo dame esperanzas para que yo te espere siempre. por favor, inventa un cuando, ¿si habra un cuand
+
+Con todo, todo mi amor…  
+Para ti, siempre:  
+Alejandro
+    </p>
+  </div>
+  <button class="button" id="playAudioBtn">Iniciar audio</button>
+</div>
+
+<script>
+  const audio = document.getElementById('audioTrack');
+  const playAudioBtn = document.getElementById('playAudioBtn');
+  const errorMsg = document.getElementById('errorMsg');
+
+  function showError(msg) {
+    errorMsg.textContent = msg;
+    errorMsg.style.display = 'block';
+  }
+  function hideError() {
+    errorMsg.textContent = '';
+    errorMsg.style.display = 'none';
+  }
+
+  playAudioBtn.addEventListener('click', () => {
+    hideError();
+    audio.currentTime = 0;
+    audio.play().then(() => {
+      playAudioBtn.disabled = true;
+      playAudioBtn.textContent = 'Audio reproduciéndose...';
+    }).catch(() => {
+      showError('No se pudo reproducir el audio. Verifica permisos o el archivo.');
+    });
+  });
+
+  audio.addEventListener('ended', () => {
+    playAudioBtn.disabled = false;
+    playAudioBtn.textContent = 'Iniciar audio';
+  });
+</script>
+
+</body>
+</html>
